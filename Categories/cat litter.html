@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Litter</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../Css File/home.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 15px;
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        color: #ff6600; /* Orange color */
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    .card-link {
+        color: #ff6600;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .card-link:hover {
+        color: #e65c00; /* Darker orange for hover effect */
+    }
+
+    .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -10px;
+    }
+
+    .card-group .card {
+        flex: 1 0 30%;
+        margin: 10px;
+    }
+
+    @media (max-width: 992px) {
+        .card-group .card {
+            flex: 1 0 48%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .card-group .card {
+            flex: 1 0 100%;
+        }
+    }
+    </style>
+</head>
+<body style="background-color: rgba(253, 253, 255, 0);">
+  <div class="container-fluid bg-dark annoucement text-center " style="border: 1px solid orange;">
+    <a href="">Contact our team for support</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="white" fill="none"
+        class="mx-2">
+        <path
+            d="M17 10.8045C17 10.4588 17 10.286 17.052 10.132C17.2032 9.68444 17.6018 9.51076 18.0011 9.32888C18.45 9.12442 18.6744 9.02219 18.8968 9.0042C19.1493 8.98378 19.4022 9.03818 19.618 9.15929C19.9041 9.31984 20.1036 9.62493 20.3079 9.87302C21.2513 11.0188 21.7229 11.5918 21.8955 12.2236C22.0348 12.7334 22.0348 13.2666 21.8955 13.7764C21.6438 14.6979 20.8485 15.4704 20.2598 16.1854C19.9587 16.5511 19.8081 16.734 19.618 16.8407C19.4022 16.9618 19.1493 17.0162 18.8968 16.9958C18.6744 16.9778 18.45 16.8756 18.0011 16.6711C17.6018 16.4892 17.2032 16.3156 17.052 15.868C17 15.714 17 15.5412 17 15.1955V10.8045Z"
+            stroke="currentColor" stroke-width="1.5" />
+        <path
+            d="M7 10.8046C7 10.3694 6.98778 9.97821 6.63591 9.6722C6.50793 9.5609 6.33825 9.48361 5.99891 9.32905C5.55001 9.12458 5.32556 9.02235 5.10316 9.00436C4.43591 8.9504 4.07692 9.40581 3.69213 9.87318C2.74875 11.019 2.27706 11.5919 2.10446 12.2237C1.96518 12.7336 1.96518 13.2668 2.10446 13.7766C2.3562 14.6981 3.15152 15.4705 3.74021 16.1856C4.11129 16.6363 4.46577 17.0475 5.10316 16.996C5.32556 16.978 5.55001 16.8757 5.99891 16.6713C6.33825 16.5167 6.50793 16.4394 6.63591 16.3281C6.98778 16.0221 7 15.631 7 15.1957V10.8046Z"
+            stroke="currentColor" stroke-width="1.5" />
+        <path d="M5 9C5 5.68629 8.13401 3 12 3C15.866 3 19 5.68629 19 9" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="square" stroke-linejoin="round" />
+        <path d="M19 17V17.8C19 19.5673 17.2091 21 15 21H13" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+</div>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid px-3 px-sm-5 py-0">
+        <a href="../index1.html" class="navbar-brand mylogo">Puppy<span class="mylogo2">Spot</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mainicons justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 gap-lg-5">
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="../index1.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="30"
+                            color="white" fill="none" class="emojis btn">
+                            <path
+                                d="M3.16405 11.3497L4 11.5587L4.45686 16.1005C4.715 18.6668 4.84407 19.9499 5.701 20.7249C6.55793 21.5 7.84753 21.5 10.4267 21.5H13.5733C16.1525 21.5 17.4421 21.5 18.299 20.7249C19.1559 19.9499 19.285 18.6668 19.5431 16.1005L20 11.5587L20.836 11.3497C21.5201 11.1787 22 10.564 22 9.85882C22 9.35735 21.7553 8.88742 21.3445 8.59985L13.1469 2.86154C12.4583 2.37949 11.5417 2.37949 10.8531 2.86154L2.65549 8.59985C2.24467 8.88742 2 9.35735 2 9.85882C2 10.564 2.47993 11.1787 3.16405 11.3497Z"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M15 16C14.2005 16.6224 13.1502 17 12 17C10.8498 17 9.79952 16.6224 9 16"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                        </svg><br>Home
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../breed.html">
+                        <img src="../Media/Paw-removebg-preview.png" class="emojis btn" alt=""><br>Breeds
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../about us.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none" class="emojis btn">
+                            <path
+                                d="M20.7739 18C21.5232 18 22.1192 17.5285 22.6543 16.8691C23.7498 15.5194 21.9512 14.4408 21.2652 13.9126C20.5679 13.3756 19.7893 13.0714 18.9999 13M17.9999 11C19.3806 11 20.4999 9.88071 20.4999 8.5C20.4999 7.11929 19.3806 6 17.9999 6"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <path
+                                d="M3.2259 18C2.47659 18 1.88061 17.5285 1.34548 16.8691C0.250028 15.5194 2.04861 14.4408 2.73458 13.9126C3.43191 13.3756 4.21052 13.0714 4.99994 13M5.49994 11C4.11923 11 2.99994 9.88071 2.99994 8.5C2.99994 7.11929 4.11923 6 5.49994 6"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <path
+                                d="M8.08368 15.1112C7.0619 15.743 4.38286 17.0331 6.01458 18.6474C6.81166 19.436 7.6994 20 8.8155 20H15.1843C16.3004 20 17.1881 19.436 17.9852 18.6474C19.6169 17.0331 16.9379 15.743 15.9161 15.1112C13.52 13.6296 10.4797 13.6296 8.08368 15.1112Z"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15.4999 7.5C15.4999 9.433 13.9329 11 11.9999 11C10.0669 11 8.49988 9.433 8.49988 7.5C8.49988 5.567 10.0669 4 11.9999 4C13.9329 4 15.4999 5.567 15.4999 7.5Z"
+                                stroke="currentColor" stroke-width="1.8" />
+                        </svg><br>About us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact us.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none" class="emojis btn">
+                            <path
+                                d="M4 10C4 6.22876 4 4.34315 5.17157 3.17157C6.34315 2 8.22876 2 12 2H13.5C17.2712 2 19.1569 2 20.3284 3.17157C21.5 4.34315 21.5 6.22876 21.5 10V14C21.5 17.7712 21.5 19.6569 20.3284 20.8284C19.1569 22 17.2712 22 13.5 22H12C8.22876 22 6.34315 22 5.17157 20.8284C4 19.6569 4 17.7712 4 14V10Z"
+                                stroke="currentColor" stroke-width="1.8" />
+                            <path
+                                d="M9.79993 11.9741C9.37332 11.2302 9.16733 10.6228 9.04313 10.007C8.85943 9.09641 9.27981 8.20686 9.97622 7.63926C10.2706 7.39937 10.608 7.48133 10.782 7.79358L11.1749 8.49851C11.4864 9.05725 11.6421 9.33663 11.6112 9.63282C11.5803 9.929 11.3703 10.1702 10.9503 10.6527L9.79993 11.9741ZM9.79993 11.9741C10.6634 13.4797 12.0185 14.8356 13.5259 15.7001M13.5259 15.7001C14.2698 16.1267 14.8772 16.3327 15.493 16.4569C16.4036 16.6406 17.2931 16.2202 17.8607 15.5238C18.1006 15.2294 18.0187 14.892 17.7064 14.718L17.0015 14.3251C16.4427 14.0136 16.1634 13.8579 15.8672 13.8888C15.571 13.9197 15.3298 14.1297 14.8473 14.5497L13.5259 15.7001Z"
+                                stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                            <path d="M5 6L2.5 6M5 12L2.5 12M5 18H2.5" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg><br>Contact us
+                    </a>
+                </li>
+            </ul>
+        </div> 
+  
+            <div class="modal  fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex1="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content" style="background-color: black; color: orange;">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 " id="staticBackdropLabel">Categories</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3>Find a litter</h3>
+                            <li><a class="dropdown-item" href="Categories/cat litter.html">Cat Litter</a></li>
+                            <li><a class="dropdown-item" href="Categories/dogs litter.html">Dog Litter</a></li>
+
+                            <h3>Find a Stud</h3>
+                            <li><a class="dropdown-item" href="Categories/cats.html">For cat</a></li>
+                            <li><a class="dropdown-item" href="Categories/dogs.html">For dog</a></li>
+                            <li><a class="dropdown-item" href="Categories/rabbits.html">For rabbit</a></li>
+                            <li><a class="dropdown-item" href="Categories/birds insemination.html">Birds
+                                    Artificial
+                                    Insemination</a></li>
+                            <li><a class="dropdown-item" href="Categories/cattle insemination.html">Cattle
+                                    Artificial
+                                    Insemination</a></li>
+
+                            <h3>Available Vets</h3>
+                            <li><a class="dropdown-item" href="Categories/contact us.html">Contact US</a></li>
+
+                            <h3>Accessories</h3>
+                            <li><a class="dropdown-item" href="Categories/foodbowls.html">Food Bowls</a></li>
+                            <li><a class="dropdown-item" href="Categories/Tray and scooper.html">Tray and
+                                    Scooper</a>
+                            </li>
+                            <li><a class="dropdown-item" href="Categories/collars and harness.html">Collars and
+                                    Harness</a></li>
+                            <li><a class="dropdown-item" href="Categories/cages.html">Cages</a></li>
+                            <li><a class="dropdown-item" href="Categories/cloths.html">Clothes</a></li>
+                            <li><a class="dropdown-item" href="Categories/toys.html">Toys</a></li>
+
+                            <h3>Food</h3>
+                            <li><a class="dropdown-item" href="Categories/">Cat Food</a></li>
+                            <li><a class="dropdown-item" href="#">Dog Food</a></li>
+                            <li><a class="dropdown-item" href="Categories">Seeds</a></li>
+                            <li><a class="dropdown-item" href="Categories/neutrients.html">Nutrients</a></li>
+                        </div> 
+
+
+                     
+        </div>
+
+    </div>
+</nav>
+  <div class="card-group">
+    <div class="card">
+      <img src="./Media/cats litter/catlitter.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MEOW FOODS</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L
+        </p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (10).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L.</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter fsdf.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> PET METRO MIX </h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L MIX PAC OF 4</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (3).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L COFFEE</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (4).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L </p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (5).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L LEMON</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (6).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (7).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (8).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-group">
+    <div class="card">
+      <img src="./Media/cats litter/catlitter (9).jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ROYAL CANIN</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter fsdf.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PET METRO MIX </h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./Media/cats litter/catlitter.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MEOW FOODS</h5>
+        <p class="card-text">bentonite cat litter-lavender 
+          secnted 5L</p>
+      </div>
+      <div class="card-body">
+        <a href="#" class="card-link">View Post</a>
+        <a href="#" class="card-link">Contact Seller</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</html>

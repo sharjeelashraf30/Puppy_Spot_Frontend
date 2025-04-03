@@ -1,0 +1,104 @@
+body {
+    background-image: url('../Media/Orange\ White\ Modern\ Pet\ Care\ Centre\ Logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index1: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.border0 {
+    color: white;
+    font-weight: bolder;
+    z-index1: 2;
+    text-align: center;
+    margin: 280px auto;
+    padding: 50px;
+    background-color: rgba(255, 166, 0, 0.096);
+    width: 40%;
+    height: 50%;
+    font-weight: bolder;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    border: 2px solid orange;
+}
+
+div > button {
+    padding: 3px;
+    background-color: rgba(108, 167, 235, 0.521);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    
+}
+
+
+div > button > a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+    .border0 {
+        width: 50%;
+        height: auto;
+        padding: 40px;
+        margin: 150px auto;
+    }
+
+    div > button {
+        padding: 10px 25px;
+    }
+
+    div > button > a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .border0 {
+        width: 60%;
+        padding: 30px;
+        margin: 100px auto;
+    }
+
+    div > button {
+        padding: 10px 20px;
+    }
+
+    div > button > a {
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .border0 {
+        width: 80%;
+        padding: 20px;
+        margin: 50px auto;
+    }
+
+    div > button {
+        width: 90%;
+        padding: 12px 20px;
+    }
+
+    div > button > a {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
